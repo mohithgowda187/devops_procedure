@@ -1,0 +1,22 @@
+go to cmd
+mvn archetype:generate
+2346
+9
+com.bnmit
+sample1
+1.0-SNAPSHOT
+com.bnmit
+cd sample1
+paste the adress in the files
+go to src--main--java--com--bnmit--App
+right click on the page -- open with vs code
+put code save
+again go back to src--test--java--com--bnmit--Apptest
+open with vs code
+put codee save
+open pom.xml code in vscode
+add pulgins code after 45th line of build
+go back to cmd
+mvn clean test
+go back to folder -- target file will be created
+open target--site--jacacco--index
