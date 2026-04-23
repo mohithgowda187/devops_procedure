@@ -1,1 +1,18 @@
-
+go to cmd
+mvn archetype:generate
+2346
+9
+com.bnmit
+sample1
+1.0-SNAPSHOT
+com.bnmit
+cd sample1
+paste the adress in the files
+go to src--main--java--com--bnmit--App
+right click on the page -- open with vs code
+put code save
+again go back to src--test--java--com--bnmit--Apptest
+open with vs code
+put codee save
+go back to cmd
+mvn clean test
