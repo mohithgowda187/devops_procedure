@@ -1,0 +1,19 @@
+cd Desktop 
+mkdir pro
+cd pro
+git branch ff
+git checkout ff
+echo "hii" >1.txt
+git add .
+git commit -m "second"
+git checkout master
+echo "hlo" > 1.txt
+git add .
+git commit -m "updated"
+git merge ff
+cat 1.txt
+notepad 1.txt
+git add .
+git commit -m "up"
+git status
+cat 1.txt
