@@ -1,0 +1,12 @@
+
+go to jenkins
+pipeline
+discard old builds
+5 , 5
+go to pipeline script -> select any pipeline script 
+apply and save
+build now
+after running go to configuration 
+change the code to error in place of echo
+save and build 
+pipeline overview
