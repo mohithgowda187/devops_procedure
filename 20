@@ -1,0 +1,10 @@
+copy url of git
+open jenkins and docker
+go to jenkins
+select pipeline
+discard old builds
+in pipeline select pipeline script from scm 
+in scm select Git
+paste url
+change master to main
+apply and build
