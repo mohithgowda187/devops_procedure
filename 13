@@ -1,0 +1,35 @@
+go to cmd
+mvn archetype:generate
+2346
+9
+com.bnmit
+sample1
+1.0-SNAPSHOT
+com.bnmit
+cd sample1
+paste the adress in the files
+go to src--main--java--com--bnmit--App
+right click on the page -- open with vs code
+put code save
+again go back to src--test--java--com--bnmit--Apptest
+open with vs code
+put codee save
+go to github
+create repo (13)
+upload existing file-- drag and drop-- src and pom.xml
+commit change
+go to jenkins
+new item--maven project--discard old builds-- Git -- paste url
+change master to main
+Poll SCM --- * * * * *
+in Build --- goals and options--type(package)
+go to post steps-- run only if build success
+apply and save
+build now
+let it run 
+go to configure
+at last there will be Post-build actions-- select ( archieve actifat)--type (target/*.jar)
+apply and save
+build now
+go to 2
+again go back
