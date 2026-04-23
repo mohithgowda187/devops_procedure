@@ -34,4 +34,4 @@ open terminal in vs code
 docker build -t hello .
 docker images
 docker run hello
-go to cmd
+docker run -p 5020:5000 hello
