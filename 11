@@ -1,0 +1,8 @@
+open eclipse
+file--new--java project--project name--finish
+project name -- drop down -- src -- right click -- new -- class -- package name(small) -- name (caps) -- finish
+paste the code
+project name -- right click -- build path -- add libraries -- junit - next -- junit5 -- finish
+src -- right click -- new -- junit test case --- name(caps) -- finish
+paste the code
+right click on the page -- run as -- junit test
