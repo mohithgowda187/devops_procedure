@@ -7,11 +7,11 @@ FROM python:3.9-slim
  
 WORKDIR /app
  
-COPY app.py .
+COPY sample.py .
  
 EXPOSE 5020
  
-CMD ["python", "app.py"]
+CMD ["python", "sample.py"]
 
 in app.py
 
@@ -34,4 +34,18 @@ open terminal in vs code
 docker build -t hello .
 docker images
 docker run hello
-docker run -p 5020:5000 hello
+again run it for app.py 
+FROM python:3.9-slim
+ 
+WORKDIR /app
+ 
+COPY app.py .
+ 
+EXPOSE 5020
+ 
+CMD ["python", "app.py"]
+
+ocker build -t hii .
+docker images
+docker run hii
+docker run -p 5020:5000 hii
