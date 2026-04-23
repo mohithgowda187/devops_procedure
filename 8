@@ -1,1 +1,18 @@
-
+go to github
+create repo with java code (SimpleCalculator.java)
+copy the url
+got to jenkins
+freestyle project
+discard old builds
+5 , 5
+source code management -> git 
+paste the url
+change master to main
+triggers -> select github hook and poll SCM -> * * * * *
+build steps -> excecute windows batch command -> javac SimpleCalculator.java
+java SimpleCalculator.java
+apply and save
+build now
+now go to git hub and change some part of code and save changes 
+again go back and wait to run 
+then console output
