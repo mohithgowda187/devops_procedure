@@ -1,0 +1,27 @@
+run docker in background
+create a folder
+open it with vs code
+create 2 files app.py amd Dockerfile
+paste the codes
+FROM python:3.9-slim
+ 
+WORKDIR /app
+ 
+COPY app.py .
+ 
+EXPOSE 5020
+ 
+CMD ["python", "app.py"]
+open terminal in vs code
+docker build -t hello .
+docker images
+docker run hello
+go to cmd
+
+docker ps
+docker ps -a
+docker images
+docker run hello
+docker tag hello docker_user_name/hello:v1
+docker push docker_user_name/hello:v1
+go to browser--dockerhub--login
