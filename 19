@@ -1,0 +1,41 @@
+run docker in background
+create a folder
+open it with vs code
+create 2 files app.py amd Dockerfile
+paste the codes
+FROM python:3.9-slim
+ 
+WORKDIR /app
+ 
+COPY app.py .
+ 
+EXPOSE 5020
+ 
+CMD ["python", "app.py"]
+open terminal in vs code
+docker build -t hello .
+docker images
+docker run hello
+go to cmd
+
+docker ps
+docker ps -a
+docker images
+docker run hello
+
+
+go to github -- create repo(19)
+upload existing files--drag and drop both files.
+
+open jenkins
+add item--freestyle--discrad old builds--Git-- paste url
+change master to main
+Poll SCM--- * * * * *
+Build-steps---Execute windows batch command
+put following commands
+docker build -t hello .
+docker run -d -t hello
+or 
+docker run hello
+apply and save
+build now
